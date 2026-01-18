@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendre Go és divertit - El meu Blog</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fafafa;
+        }
+        .site-header {
+            border-bottom: 3px solid #333;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .site-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+        .site-header h1 a {
+            color: #333;
+            text-decoration: none;
+        }
+        .site-header h1 a:hover {
+            color: #0066cc;
+        }
+        .site-header .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .site-footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .site-footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        article h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .post-meta {
+            color: #666;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .content h1 { font-size: 2rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .content h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { margin-left: 2rem; margin-bottom: 1rem; }
+        .content code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: "Monaco", monospace;
+            font-size: 0.9em;
+        }
+        .content pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .content pre code { background: none; padding: 0; }
+        .content blockquote {
+            border-left: 4px solid #0066cc;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1><a href="../index.html">El meu Blog</a></h1>
+        <p class="subtitle">Pensaments i articles</p>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h1>Aprendre Go és divertit</h1>
+                <div class="post-meta">
+                    <time datetime="2026-01-10">
+                        10 Gener 2026
+                    </time>
+                </div>
+            </header>
+
+            <div class="content">
+                <h1>Per què    m&#39;agrada Go</h1>
+<p>Go és un llenguatge de programació modern i eficient.</p>
+<h2>Simplicitat</h2>
+<p>Go té una sintaxi molt neta i fàcil d&#39;aprendre. No hi ha herència complexa ni característiques obscures.</p>
+<p><img src="../images/img01.jpg" alt="imatge"></p>
+<h2>Rendiment</h2>
+<p>El codi compilat de Go és molt ràpid, gairebé tan ràpid com C o C++, però molt més fàcil d&#39;escriure.</p>
+<h2>Concurrència</h2>
+<p>Les goroutines fan que la programació concurrent sigui senzilla:</p>
+<pre><code class="language-go">go func() {
+    fmt.Println(&quot;Això s&#39;executa en paral·lel!&quot;)
+}()
+</code></pre>
+<h2>Eines integrades</h2>
+<p>Go ve amb eines fantàstiques integrades:</p>
+<ul>
+<li><code>go fmt</code> - Formateja el codi automàticament</li>
+<li><code>go test</code> - Sistema de testing integrat</li>
+<li><code>go mod</code> - Gestió de dependències</li>
+<li><code>go build</code> - Compilació ràpida</li>
+</ul>
+<p>Perfecte per crear eines com aquest generador de blogs!</p>
+
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Generat amb CMS Light Blog · <a href="../index.html">Inici</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+echo "
+# Go binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/vendor/
+
+# Go database files
+*.db
+*.sqlite" >> .gitignore

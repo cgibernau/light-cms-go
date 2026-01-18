@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El meu primer post - El meu Blog</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fafafa;
+        }
+        .site-header {
+            border-bottom: 3px solid #333;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .site-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+        .site-header h1 a {
+            color: #333;
+            text-decoration: none;
+        }
+        .site-header h1 a:hover {
+            color: #0066cc;
+        }
+        .site-header .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .site-footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .site-footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        article h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .post-meta {
+            color: #666;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .content h1 { font-size: 2rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .content h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { margin-left: 2rem; margin-bottom: 1rem; }
+        .content code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: "Monaco", monospace;
+            font-size: 0.9em;
+        }
+        .content pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .content pre code { background: none; padding: 0; }
+        .content blockquote {
+            border-left: 4px solid #0066cc;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1><a href="../index.html">El meu Blog</a></h1>
+        <p class="subtitle">Pensaments i articles</p>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h1>El meu primer post</h1>
+                <div class="post-meta">
+                    <time datetime="2026-01-14">
+                        14 Gener 2026
+                    </time>
+                </div>
+            </header>
+
+            <div class="content">
+                <h1>Benvingut al meu blog!</h1>
+<p>Aquest és el meu primer article utilitzant el generador de blog estàtic.</p>
+<h2>Característiques</h2>
+<p>El sistema té les següents funcionalitats:</p>
+<ul>
+<li><strong>Markdown simple</strong>: Escriu en Markdown i es converteix automàticament a HTML</li>
+<li><strong>Metadades</strong>: Cada post té títol, data i estat (draft/published)</li>
+<li><strong>Ordenació cronològica</strong>: Els posts es mostren del més recent al més antic</li>
+<li><strong>Disseny responsive</strong>: Funciona bé en mòbil i escriptori</li>
+</ul>
+<h2>Com funciona?</h2>
+<ol>
+<li>Crees un fitxer <code>.md</code> a la carpeta <code>content/</code></li>
+<li>Afegeixes les metadades al començament entre <code>---</code></li>
+<li>Executes el generador</li>
+<li>El teu blog està llest a <code>public/</code>!</li>
+</ol>
+<blockquote>
+<p>Això és una cita. Molt útil per destacar informació important.</p>
+</blockquote>
+<h3>Exemple de codi</h3>
+<p>Pots afegir codi fàcilment:</p>
+<pre><code class="language-go">func main() {
+    fmt.Println(&quot;Hola, món!&quot;)
+}
+</code></pre>
+<h3>Llistes</h3>
+<p>També pots crear llistes:</p>
+<ul>
+<li>Element 1</li>
+<li>Element 2</li>
+<li>Element 3</li>
+</ul>
+<p>I llistes numerades:</p>
+<ol>
+<li>Primer</li>
+<li>Segon</li>
+<li>Tercer</li>
+</ol>
+<p><strong>Negreta</strong> i <em>cursiva</em> també funcionen perfectament!</p>
+
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Generat amb CMS Light Blog · <a href="../index.html">Inici</a></p>
+    </footer>
+</body>
+</html>
